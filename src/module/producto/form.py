@@ -22,25 +22,18 @@ class  DatosForm:
     
     def menu(self):
         self.pagina1 = ttk.Frame(self.cuaderno1)
-        self.cuaderno1.add(self.pagina1, text="Menú") #Nombre de la pestaña
+        self.cuaderno1.add(self.pagina1, text="Presentación") #Nombre de la pestaña
         #identificador de campo
-        self.labelframe1=ttk.LabelFrame(self.pagina1, text="UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO \n Métodos Numéricos I\n Pichardo Franco Marco")
+        self.labelframe1=ttk.LabelFrame(self.pagina1, text="UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO \n Métodos Numéricos I\n Pichardo Franco Marco\n holi")
         #en donde se encuentra el campo para llenar
         self.labelframe1.grid(column = 0, row = 0, padx = 4, pady = 4)
-        
-        self.labelframe2=ttk.LabelFrame(self.pagina1, text="Elige algún método")
-        #en donde se encuentra el campo para llenar
-        self.labelframe2.grid(column = 1, row = 1, padx = 4, pady = 4)
-        
-        self.boton1 = ttk.Button(self.labelframe1, text="Jacobi", command = self.jacobi)
-        self.boton1.grid(column=1, row=9, padx=4, pady=4)
 
-        self.boton2 = ttk.Button(self.labelframe2, text="Jacobi", command = self.jacobi)
-        self.boton2.grid(column=1, row=10, padx=4, pady=4)
+        self.label= ttk.Label(self.labelframe1, text = "Elige algún metodo de las pestañas")
+        self.label.grid(column = 0, row = 0, padx = 4, pady = 4)
+
 
 
 
     def jacobi(self):
         self.pagina2 = ttk.Frame(self.cuaderno1)
         self.cuaderno1.add(self.pagina2, text = "Jacobi")
- 
